@@ -1,0 +1,5 @@
+{
+  "name": "Codex Usage",
+  "description": "A macOS desktop widget for monitoring local OpenAI Codex token usage.",
+  "author": "rajo-r"
+}

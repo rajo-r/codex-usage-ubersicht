@@ -36,7 +36,7 @@ export const render = ({output,error}) => {
    </div>
    <div className="row"><span className="muted">CACHED INPUT / 30 DAYS</span><b>{cacheShare.toFixed(1)}%</b></div>
    <div className="track"><div className="fill" style={{width:cacheShare+'%'}}/></div>
-   <div className="row"><span className="muted">DENNÁ SPOTREBA · 30 DAYS</span><span className="muted">MAX {fmt(max)}</span></div>
+   <div className="row"><span className="muted">DAILY USAGE · 30 DAYS</span><span className="muted">MAX {fmt(max)}</span></div>
    <div className="chart">{d.series.map(x=><div key={x.date} className="bar" title={x.date+': '+fmt(x.total)+' tokens'} style={{height:Math.max(1,x.total/max*100)+'%'}}/>)}</div>
    <div className="footer muted">Sessions: {d.sessions} · Token events: {d.events}<br/>Last event: {time(d.last_event)}<br/>Updated: {time(d.updated)}<br/><strong>Subscription limits: unknown.</strong> Local tokens do not indicate weekly quota usage.</div>
  </div>;
